@@ -15,12 +15,11 @@ public class LinkedListExample {
     public LinkedListExample(){
         first = null;
     }
-    public LinkedListExample addHead(String data){
+    public void addHead(String data){
         Node newNode;
         newNode = new Node(data);
         newNode.ref = first;
-        first = newNode;
-        return this;
+        first = newNode;        
     }
     public void displayList(){
         Node current;
@@ -34,16 +33,17 @@ public class LinkedListExample {
     public void addTail(String data){
         Node newTail;
         newTail = new Node(data);
-        newTail.ref = null;
+        newTail.ref = null; 
         //empty list
         if(first == null){
             first = newTail;
             return;
         }
-        Node tmp;        
-        for(tmp = first; tmp.getRef() != null; tmp.getRef()){
-            tmp.setRef(newTail);
+        Node tmp = first;
+        while(tmp.ref != null){
+            tmp = tmp.ref;
         }
+        tmp.ref = newTail;
     }
     
     

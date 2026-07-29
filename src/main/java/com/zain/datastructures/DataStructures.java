@@ -40,7 +40,10 @@ public class DataStructures {
          myLinkedListExample.addHead("Third Element");
          myLinkedListExample.addHead("Fourth Element");
          //adding tails to get a LIFO linkledLIst
-         
+         myLinkedListExample.displayList();
+         myLinkedListExample.addTail("final");
+         myLinkedListExample.addTail("final-2");
+         myLinkedListExample.addTail("final-3");
          myLinkedListExample.displayList();
          
          //DoubleLinkedList
