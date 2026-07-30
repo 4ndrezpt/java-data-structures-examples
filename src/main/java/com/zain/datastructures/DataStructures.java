@@ -13,6 +13,7 @@ import lineals.ArrayListExample;
 import lineals.ListExample;
 import lineals.StackExample;
 import lineals.LinkedListExample;
+import lineals.DoubleLinkedListExample;
 
 public class DataStructures {
 
@@ -45,9 +46,28 @@ public class DataStructures {
          myLinkedListExample.addTail("final-2");
          myLinkedListExample.addTail("final-3");
          myLinkedListExample.displayList();
-         
+         myLinkedListExample.search("some Element");
+         myLinkedListExample.search("Third Element");
+         System.out.println("Deleting on value from list"+ " final-2");
+         myLinkedListExample.deleteNode("final-2");
+         myLinkedListExample.displayList();
+         System.out.println(myLinkedListExample.getSize());
          //DoubleLinkedList
+         DoubleLinkedListExample myDoubleLinkedListExample = new DoubleLinkedListExample();
+         myDoubleLinkedListExample.insertHead("First Double Element");
+         myDoubleLinkedListExample.insertHead("Second Double Element");
+         myDoubleLinkedListExample.insertHead("Trird Double Element");
+         myDoubleLinkedListExample.insertHead("Fourth Double Element");
+         myDoubleLinkedListExample.insertHead("Final Double 1");
+         myDoubleLinkedListExample.insertHead("Final Double 2");
+         myDoubleLinkedListExample.insertHead("Final Double 3");
+         myDoubleLinkedListExample.insertHead("Final Double 4");
+         System.out.println("Print DoubleLinkedList Fordward");
+         myDoubleLinkedListExample.displayForward();
+         System.out.println("Print DoubleLinkedList Backward");
+         myDoubleLinkedListExample.displayBackward();
          
+                 
          //CIrcularLinkedList
          
          //
