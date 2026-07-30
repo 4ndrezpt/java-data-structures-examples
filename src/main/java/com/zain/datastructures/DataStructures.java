@@ -14,6 +14,7 @@ import lineals.ListExample;
 import lineals.StackExample;
 import lineals.LinkedListExample;
 import lineals.DoubleLinkedListExample;
+import lineals.CircularLinkedListExample;
 
 public class DataStructures {
 
@@ -65,11 +66,22 @@ public class DataStructures {
          System.out.println("Print DoubleLinkedList Fordward");
          myDoubleLinkedListExample.displayForward();
          System.out.println("Print DoubleLinkedList Backward");
-         myDoubleLinkedListExample.displayBackward();
-         
+         myDoubleLinkedListExample.displayBackward();       
                  
-         //CIrcularLinkedList
+         //CircularLinkedList
+         CircularLinkedListExample myCircularLinkedList = new CircularLinkedListExample();
+         myCircularLinkedList.insertHead("First Circular Element");
+         myCircularLinkedList.insertHead("Second Circular Element");
+         myCircularLinkedList.insertHead("Third Circular Element");
          
+         myCircularLinkedList.insertTail("Final Circular 1");
+         myCircularLinkedList.insertTail("Final Circular 2");
+         myCircularLinkedList.insertTail("Final Circular 3");
+         myCircularLinkedList.insertTail("Final Circular 4");         
+         myCircularLinkedList.display();
+         //delete one element and then displayed again
+         myCircularLinkedList.delete("Second Circular Element");
+         myCircularLinkedList.display();
          //
     }
 }
