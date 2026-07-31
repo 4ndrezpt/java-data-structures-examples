@@ -23,6 +23,5 @@ public class Node {
     }
     public Node getRef(){
         return this.ref;
-    }
-    
+    }    
 }
