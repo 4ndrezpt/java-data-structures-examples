@@ -15,7 +15,7 @@ import lineals.StackExample;
 import lineals.LinkedListExample;
 import lineals.DoubleLinkedListExample;
 import lineals.CircularLinkedListExample;
-
+import nonLineals.BinaryTreeExample;
 public class DataStructures {
 
     public static void main(String[] args) {
@@ -82,6 +82,19 @@ public class DataStructures {
          //delete one element and then displayed again
          myCircularLinkedList.delete("Second Circular Element");
          myCircularLinkedList.display();
-         //
+         //Non-lineal data structures invoke
+         System.out.println("---------------------------------------------------------------");
+         System.out.println("Non lineals structures");
+         System.out.println("---------------------------------------------------------------");
+         BinaryTreeExample myBinaryTree = new BinaryTreeExample();
+         myBinaryTree.insert(7);
+         myBinaryTree.insert(21);
+         myBinaryTree.insert(24);
+         myBinaryTree.insert(33);
+         myBinaryTree.insert(29);
+         myBinaryTree.insert(2);
+         myBinaryTree.insert(1);
+         System.out.println("Binary Tree, In order traversal");        
+         myBinaryTree.traverseInOrder();                  
     }
 }
